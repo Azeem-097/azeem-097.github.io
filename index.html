@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DevNix Studios — Creators of Merge Tiles: 2048</title>
   <meta name="description" content="DevNix Studios is the official developer of Merge Tiles: 2048, an addictive number puzzle game available on Google Play.">
+  <link rel="icon" type="image/png" href="logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -189,18 +190,17 @@
     }
     
     .game-icon {
-      width: 180px;
-      height: 180px;
-      border-radius: 36px;
-      background: linear-gradient(135deg, #e94560, #533483);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 4rem;
-      font-weight: 800;
-      color: #fff;
+      width: 200px;
+      height: 200px;
+      border-radius: 40px;
       box-shadow: 0 20px 50px rgba(233, 69, 96, 0.4);
       margin: 0 auto;
+      display: block;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .game-icon:hover {
+      transform: scale(1.05) rotate(-2deg);
     }
     
     .game-info h3 {
@@ -262,6 +262,7 @@
       header { flex-direction: column; gap: 16px; }
       nav a { margin: 0 10px; }
       .features { justify-content: center; }
+      .game-icon { width: 160px; height: 160px; }
     }
   </style>
 </head>
@@ -282,7 +283,7 @@
       <h1>Crafting Addictive Mobile Experiences</h1>
       <p>We design and build puzzle games that millions of players love. Simple to learn, impossible to put down.</p>
       <div class="cta-buttons">
-        <a href="https://play.google.com/store/apps/details?id=com.devhubstu" class="btn btn-primary">
+        <a href="https://play.google.com/store/apps/details?id=com.devhubstudios.mergetiles2048" class="btn btn-primary">
           ▶ Play on Google Play
         </a>
         <a href="mailto:devnixstudios@gmail.com" class="btn btn-secondary">
@@ -294,7 +295,7 @@
     <section class="game-section" id="games">
       <h2 class="section-title">Our Games</h2>
       <div class="game-card">
-        <div class="game-icon">2048</div>
+        <img src="logo.png" alt="Merge Tiles: 2048 Game Logo" class="game-icon">
         <div class="game-info">
           <h3>Merge Tiles: 2048</h3>
           <p>The ultimate 2048 experience! Merge tiles on massive grids and reach 16K+ in this classic number puzzle game reimagined with new features and game modes.</p>
@@ -304,7 +305,7 @@
             <span class="feature-tag">🎯 Casual</span>
             <span class="feature-tag">♾️ Endless Fun</span>
           </div>
-          <a href="https://play.google.com/store/apps/details?id=com.devhubstu" class="btn btn-primary">
+          <a href="https://play.google.com/store/apps/details?id=com.devhubstudios.mergetiles2048" class="btn btn-primary">
             Download Now →
           </a>
         </div>
@@ -318,7 +319,6 @@
         <a href="mailto:devnixstudios@gmail.com">Contact Us</a>
       </div>
       <p>© 2026 DevNix Studios. All rights reserved.</p>
-      <p style="margin-top: 8px; opacity: 0.7;">Made with ❤️ for puzzle game lovers</p>
     </footer>
   </div>
 </body>
